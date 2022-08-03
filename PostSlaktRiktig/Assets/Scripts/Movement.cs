@@ -35,9 +35,21 @@ public class Movement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.A) && (Input.GetKey(KeyCode.W)))
         {
-             rb.AddTorque(0.05f, ForceMode2D.Impulse); //roterar rigidbodyn
+            rb.AddTorque(0.05f, ForceMode2D.Impulse); //roterar rigidbodyn
             //tra.Rotate(0, 0, 5);
         }
-    }
+        if (Input.GetKey(KeyCode.S))
+        {
+            rb.AddForce(transform.up * -speed * 0.5f, ForceMode2D.Impulse);
+        }
+        if (Input.GetKey(KeyCode.D) && (Input.GetKey(KeyCode.S)))
+        {
+            rb.AddTorque(0.025f, ForceMode2D.Impulse);
+        }
+        if (Input.GetKey(KeyCode.A) && (Input.GetKey(KeyCode.S)))
+        {
+            rb.AddTorque(-0.025f, ForceMode2D.Impulse);
 
+        }
+    }
 }
