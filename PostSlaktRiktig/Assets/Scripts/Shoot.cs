@@ -28,6 +28,7 @@ public class Shoot : MonoBehaviour
             Rigidbody2D rbullet = bullet.GetComponent<Rigidbody2D>();
             rbullet.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
             reload = 0;
+            Destroy(bullet, 15);
         }
         timer -= Time.deltaTime;
         if (timer < 0)
