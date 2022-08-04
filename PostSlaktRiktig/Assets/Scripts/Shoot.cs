@@ -26,7 +26,7 @@ public class Shoot : MonoBehaviour
         {
             GameObject bullet = Instantiate(ammo, firePoint.position, firePoint.rotation);
             Rigidbody2D rbullet = bullet.GetComponent<Rigidbody2D>();
-            //rbullet.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+            rbullet.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
             reload = 0;
         }
         timer -= Time.deltaTime;
