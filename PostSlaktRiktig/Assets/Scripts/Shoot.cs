@@ -7,8 +7,8 @@ public class Shoot : MonoBehaviour
     public Transform firePoint;
     public GameObject ammo;
     public float bulletForce = 20f;
-    private float reload = 1;
-    public float timer = 1;
+    private float reload = 0;
+    public float timer = 0;
     Rigidbody2D rb;
     Vector2 mousePos;
     public Camera cam;

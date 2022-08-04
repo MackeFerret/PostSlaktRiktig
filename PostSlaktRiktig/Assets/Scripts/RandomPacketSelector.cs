@@ -63,5 +63,9 @@ public class RandomPacketSelector : MonoBehaviour
                 }
             }
         }
+        if (Input.GetButton("Fire1"))
+        {
+            GetComponent<RandomPacketSelector>().enabled = false;
+        }
     }
 }
