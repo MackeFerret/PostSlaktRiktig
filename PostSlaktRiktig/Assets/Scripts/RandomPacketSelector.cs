@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RandomPacketSelector : MonoBehaviour
 {
+
+    private Rigidbody2D rb;
     public SpriteRenderer spriteRenderer;
     public Sprite newSprite0;
     public Sprite newSprite1;
@@ -18,6 +20,7 @@ public class RandomPacketSelector : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
@@ -66,6 +69,13 @@ public class RandomPacketSelector : MonoBehaviour
         if (Input.GetButton("Fire1"))
         {
             GetComponent<RandomPacketSelector>().enabled = false;
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D house)
+    {
+        if (house.gameObject.CompareTag("House"))
+        {
+            rb.drag = 10;
         }
     }
 }

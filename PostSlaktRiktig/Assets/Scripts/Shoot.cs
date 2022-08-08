@@ -6,10 +6,13 @@ public class Shoot : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject ammo;
-    public float bulletForce = 20f;
-    private float reload = 0;
-    public float timer = 0;
+    public GameObject house;
+
+    public float bulletForce = 20f; //how fast bullet goes
+    private float reload = 0; //when reload = 1, can shoot
+    public float timer = 0; //counts second(s) til reload = 1
     Rigidbody2D rb;
+
     Vector2 mousePos;
     public Camera cam;
     // Start is called before the first frame update
