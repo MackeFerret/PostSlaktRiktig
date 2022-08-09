@@ -23,10 +23,12 @@ public class GameMang : MonoBehaviour
     public void PlusPoints()
     {
         Points++;
+        Debug.Log("Test1");
     }
     public void PlusPointsPlus()
     {
         Points++;
         Points++;
+        Debug.Log("Test2");
     }
 }

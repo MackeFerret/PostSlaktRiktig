@@ -75,7 +75,7 @@ public class RandomPacketSelector : MonoBehaviour
     {
         if (house.gameObject.CompareTag("House"))
         {
-            rb.drag = 10;
+            rb.drag = 20;
         }
     }
 }
