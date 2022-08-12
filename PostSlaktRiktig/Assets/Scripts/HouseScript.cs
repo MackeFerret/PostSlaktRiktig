@@ -10,12 +10,18 @@ public class HouseScript : MonoBehaviour
     public UnityEvent hasDelivered;
 
     bool Delivery = true;
+    GameMang gameManager;
 
+    private void Start()
+    {
+        this.gameManager = GameObject.FindObjectOfType<GameMang>();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Packet") && Delivery == true)
         {
             onDelivering.Invoke();
+            this.gameManager.PlusPoints();
             Delivery = false;
         }
         else if(Delivery == false)
