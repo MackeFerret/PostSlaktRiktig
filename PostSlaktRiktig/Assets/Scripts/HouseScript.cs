@@ -9,12 +9,16 @@ public class HouseScript : MonoBehaviour
     public UnityEvent onDelivering;
     public UnityEvent hasDelivered;
 
-    bool Delivery = true;
+    public bool Delivery = true;
     GameMang gameManager;
+
+    Animator DeliveryIcon;
 
     private void Start()
     {
         this.gameManager = GameObject.FindObjectOfType<GameMang>();
+        this.DeliveryIcon = GetComponentInChildren<Animator>();
+        
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -23,9 +27,12 @@ public class HouseScript : MonoBehaviour
             onDelivering.Invoke();
             this.gameManager.PlusPoints();
             Delivery = false;
+            this.DeliveryIcon.gameObject.SetActive(false);
+            
         }
         else if(Delivery == false)
         {
+            
             hasDelivered.Invoke();
         }
     }

@@ -8,6 +8,12 @@ TagManager:
   - Undefined
   - Packet
   - Prop
+  - Right
+  - Left
+  - Up
+  - Down
+  - Map
+  - Icon
   layers:
   - Default
   - TransparentFX

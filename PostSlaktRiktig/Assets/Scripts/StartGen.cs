@@ -6,7 +6,6 @@ public class StartGen : MonoBehaviour
 {
     [SerializeField] GameObject Map1;
     [SerializeField] GameObject Map2;
-    [SerializeField] GameObject Map3;
     [SerializeField] GameObject Map4;
     [SerializeField] GameObject Map5;
     [SerializeField] GameObject Map6;
@@ -18,7 +17,7 @@ public class StartGen : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        float rng = Random.Range(0, 8);
+        float rng = Random.Range(0, 7);
         if (rng == 0)
         {
             Instantiate(Map1, mapCenter);
@@ -29,25 +28,21 @@ public class StartGen : MonoBehaviour
         }
         else if (rng == 2)
         {
-            Instantiate(Map3, mapCenter);
+            Instantiate(Map4, mapCenter);
         }
         else if (rng == 3)
         {
-            Instantiate(Map4, mapCenter);
+            Instantiate(Map5, mapCenter);
         }
         else if (rng == 4)
         {
-            Instantiate(Map5, mapCenter);
+            Instantiate(Map6, mapCenter);
         }
         else if (rng == 5)
         {
-            Instantiate(Map6, mapCenter);
-        }
-        else if (rng == 6)
-        {
             Instantiate(Map7, mapCenter);
         }
-        else if (rng == 7)
+        else if (rng == 6)
         {
             Instantiate(Map8, mapCenter);
         }
