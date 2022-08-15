@@ -337,6 +337,7 @@ GameObject:
   - component: {fileID: 753618255}
   - component: {fileID: 753618254}
   - component: {fileID: 753618253}
+  - component: {fileID: 753618256}
   m_Layer: 5
   m_Name: Options_Button
   m_TagString: Untagged
@@ -446,6 +447,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 753618251}
   m_CullTransparentMesh: 1
+--- !u!95 &753618256
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753618251}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 44191243a866eb940b6bd8dd2844ffc9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1143416526
 GameObject:
   m_ObjectHideFlags: 0
@@ -1007,6 +1028,7 @@ GameObject:
   - component: {fileID: 1830005580}
   - component: {fileID: 1830005579}
   - component: {fileID: 1830005582}
+  - component: {fileID: 1830005583}
   m_Layer: 5
   m_Name: Quit_Button
   m_TagString: Untagged
@@ -1140,3 +1162,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a47ab1a2a4561047be141084b751122, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1830005583
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830005577}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8d12bebb562058b4f86f3310cd80eeea, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
