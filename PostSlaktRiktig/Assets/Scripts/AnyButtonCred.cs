@@ -14,16 +14,9 @@ public class AnyButtonCred : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.anyKeyDown)
-        {
-            anyButton.SetActive(true);
-            Invoke("backtrue", 0.5f);
-        }
+        
     }
-    void anyButtonDecay()
-    {
-        anyButton.SetActive(false);
-    }
+
     public void backButton()
     {
         Invoke("backButtonDelay", 5);

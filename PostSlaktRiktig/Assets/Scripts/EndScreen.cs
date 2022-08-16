@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class EndScreen : MonoBehaviour
 {
     public GameObject EndScreen1;
-
     public Countdown timer;
-   
+
     void Start()
     {
         EndScreen1.SetActive(false);
@@ -20,6 +20,5 @@ public class EndScreen : MonoBehaviour
         {
             EndScreen1.SetActive(true);
         }
-       
     }
 }
