@@ -7,7 +7,7 @@ public class Buttons : MonoBehaviour
 {
     public void PlayGame()
     {
-        Invoke("PlayGameDelay",1);
+        Invoke("PlayGameDelay",3);
     }
 
     public void QuitGame()
