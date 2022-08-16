@@ -7,7 +7,11 @@ public class Buttons : MonoBehaviour
 {
     public void PlayGame()
     {
-        Invoke("PlayGameDelay",3);
+        Invoke("PlayGameDelay",5);
+    }
+    public void Credits()
+    {
+        Invoke("CreditDelay", 5);
     }
 
     public void QuitGame()
@@ -18,5 +22,9 @@ public class Buttons : MonoBehaviour
     public void PlayGameDelay()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    public void CreditDelay()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
 }
