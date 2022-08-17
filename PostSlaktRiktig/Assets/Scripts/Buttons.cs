@@ -13,6 +13,10 @@ public class Buttons : MonoBehaviour
     {
         Invoke("CreditDelay", 5);
     }
+    public void BackToMenu()
+    {
+        Invoke("BackToMenuDelay", 2);
+    }
 
     public void QuitGame()
     {
@@ -26,5 +30,10 @@ public class Buttons : MonoBehaviour
     public void CreditDelay()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+    }
+    public void BackToMenuDelay()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 }
