@@ -23,7 +23,7 @@ public class GameMang : MonoBehaviour
     
     void Update()
     {
-        pointText.text = ("Points :" + Points).ToString();
+        pointText.text = ("" + Points).ToString();
 
         housesPoints.text = "You delivered " + houses + " packages!";
         windowsPoints.text = "You smashed " + windows + " windows in the process!";
